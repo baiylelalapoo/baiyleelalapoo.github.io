@@ -34,23 +34,24 @@
             gap: 30px;
         }
 
-        /* HEADER / PROFIL UTAMA (DENGAN FOTO) */
+        /* HEADER / PROFIL UTAMA (DENGAN FOTO LEBIH KECIL) */
         .header {
             grid-column: 1 / -1;
             border-bottom: 2px solid #1a365d;
-            padding-bottom: 20px;
+            padding-bottom: 15px;
             margin-bottom: 10px;
             display: flex;
             align-items: center;
-            gap: 25px;
+            gap: 15px; /* Jarak antara foto dan teks diperkecil */
         }
 
+        /* UKURAN FOTO DIPERKECIL */
         .profile-img {
-            width: 110px;
-            height: 110px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #1a365d;
+            border: 2px solid #1a365d;
             flex-shrink: 0;
         }
 
@@ -59,25 +60,25 @@
         }
 
         .header h1 {
-            font-size: 28px;
+            font-size: 26px;
             color: #1a365d;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .header .subtitle {
-            font-size: 14px;
+            font-size: 13.5px;
             color: #4a5568;
             font-weight: 600;
-            margin-top: 4px;
+            margin-top: 2px;
         }
 
         .contact-info {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
-            margin-top: 12px;
-            font-size: 13px;
+            margin-top: 8px;
+            font-size: 12.5px;
             color: #4a5568;
         }
 
@@ -204,10 +205,11 @@
 
     <div class="cv-container">
         
-        <!-- HEADER DENGAN ELEMEN GAMBAR -->
+        <!-- HEADER -->
         <header class="header">
             <!-- Ganti URL pada src di bawah ini dengan lokasi/URL foto kamu -->
-            <img src="IMG_20260418_233214_728.jpg">            
+            <img src="https://via.placeholder.com/150" alt="Foto Profil Nabilla Nursaeda" class="profile-img">
+            
             <div class="header-text">
                 <h1>Nabilla Nursaeda</h1>
                 <div class="subtitle">Siswa Kelas 10 | Lahir: Bandung, 06 November 2010 (15 Tahun)</div>
